@@ -21,6 +21,8 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(CLI11 nlohmann_json)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 add_executable(std-cli src/main.cpp)
 
 target_link_libraries(std-cli PRIVATE
